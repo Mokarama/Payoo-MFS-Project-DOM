@@ -21,7 +21,7 @@
                 <div class="stats shadow">
                     <div class="stat">
                       <div class="stat">Total Page Views</div>
-                      <div class="stat-value">89400</div>
+                      <div id="account-balance" class="stat-value">9400</div>
                       <div class="stat-desc">avaiable balance</div>
                     </div>
                   </div>
@@ -37,7 +37,7 @@
 
          <!-- Add Money Form start -->
 
-         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
             <form class="card-body">
               <div class="form-control">
                 <label class="label">
@@ -58,12 +58,33 @@
           </div>
           <!-- Add Money Form end -->
 
-
+          <!-- cash out start -->
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input id="input-cash-out" type="text" placeholder="Amount" class="input input-bordered" autocomplete="off" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+                <input id="input-cash-out-pin" type="password" placeholder="password" class="input input-bordered" autocomplete="off" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="cash-out-btn" class="btn btn-primary">Cash Out</button>
+              </div>
+            </form>
+          </div>
+          <!-- cash out end -->
           </div>
         </div>
       </div>
    </main>
 
    <script src="./js/home.js"></script>
+   <script src="./js/cash-out.js"></script>
 </body>
 </html>
